@@ -2,11 +2,24 @@ function sleep(ms) {
     return new Promise(resolve => setTimeout(resolve, ms));
 }
 
+
 var sleeptime=3500;
 
 async function mainfunc(sleeptime)	{
 	// 把inputid的值修改为你想选的课号，会自动处理。
-	var inputid="1305";
+	var inputid1= "1296";
+	var inputid2 = "1369";
+	var a = Math.ceil(Math.random()*10); 
+
+	var inputid;
+	if (a % 2 == 1) {
+		inputid = inputid1;
+	}else {
+		inputid = inputid2;
+	}
+
+	// var sleeptime = a * 1000;
+
 	$("input[name='electableLesson.no']").val(inputid);
 	$("#electableLessonList_filter_submit").click();
 	var targetid=$("tr[class='electGridTr electGridTr-even']").attr('id');
@@ -42,8 +55,8 @@ async function mainfunc(sleeptime)	{
 		alert("success!");
 		return;
 	}
-	console.log("Failed...Try again...");
-	mainfunc(sleeptime);
+	console.log("Failed...Try again... " + inputid);
+	mainfunc(a * 1000);
 }
 
 mainfunc(sleeptime);
