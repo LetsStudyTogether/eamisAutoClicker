@@ -3,12 +3,13 @@ function sleep(ms) {
 }
 
 var sleeptime=3500;
-if(true)
-	sleeptime=Math.ceil(Math.random()*5000)+1000;
-
-var inputid=new Array("0161","0175");
+//把下面的数组元素修改为你想选的课程编号
+var inputid=new Array("0161","0380","0311","0196","0022");
 
 async function mainfunc(sleeptime,inputid)	{
+	//如果不需要随机间隔把true改为false
+	if(true)
+		sleeptime=Math.ceil(Math.random()*5000)+1000;
 	var id=inputid[Math.floor(Math.random()*inputid.length)];
 	$("input[name='electableLesson.no']").val(id);
 	$("#electableLessonList_filter_submit").click();
@@ -53,7 +54,7 @@ async function mainfunc(sleeptime,inputid)	{
 		}
 	}
 	else 	{
-		console.log("Failed...Try again...Last try in "+id+" groupid: "+groupid);
+		console.log("Failed...Try again...Last try in "+id+", groupid: "+groupid+", Last interval: "+sleeptime);
 		mainfunc(sleeptime,inputid);
 	}
 }
