@@ -45,17 +45,17 @@ async function mainfunc(sleeptime,inputid)	{
 		if(getdata.indexOf("成功")>=0) 	{
 			if(inputid.length>1)	{
 				inputid.splice($.inArray(id,inputid),1);
-				console.log("Success in "+id+" Group:"+groupid);
+				console.log("Success! Id: "+id+" Group:"+groupid);
 				//mainfunc(sleeptime,inputid);
 			}
 			else {
-				console.log("Success in "+id+" Group:"+groupid);
-				alert("All Success!");
+				console.log("Success! Id: "+id+" Group:"+groupid);
+				alert("All Succeeded!");
 				return;
 			}
 		}
 		else 	{
-			console.log("Failed...Try again...Last try in "+id+", groupid: "+groupid+", Last interval: "+sleeptime);
+			console.log("Failed...Try again...Last try Id: "+id+", groupid: "+groupid+", Last interval: "+sleeptime);
 			//mainfunc(sleeptime,inputid);
 		}
 	}
