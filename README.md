@@ -1,7 +1,7 @@
 # eamisAutoClicker
 NKU EAMIS选课脚本
 ## LOG
-- 2019.02.27 把递归改为循环；profileId改为18-19第二学期第二次补退选
+- 2019.02.27 profileId改为18-19第二学期第二次补退选
 - 2019.02.22 现在可以一次抢多个课的多个不同分组了
 - 2019.02.19 现在可以一次抢两个课了；profileId改为18-19第二学期补退选；sleeptime现在由随机数决定，此功能由 lost222 的 pull request 实现
 - 2019.01.19 First Editon，只支持抢一个课的单一分组
