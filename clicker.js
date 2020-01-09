@@ -4,13 +4,13 @@ function sleep(ms) {
 
 var sleeptime=3500;
 //把下面的数组元素修改为你想选的课程编号
-var inputid=new Array("0161","0175");
+var inputid=new Array("1437", "1438");
 
 async function mainfunc(sleeptime,inputid)	{
 	while(1)	{
 		//如果不需要随机间隔把true改为false
 		if(true)
-			sleeptime=Math.ceil(Math.random()*5000)+1000;
+			sleeptime=Math.ceil(Math.random()*300)+200;
 		var id=inputid[Math.floor(Math.random()*inputid.length)];
 		$("input[name='electableLesson.no']").val(id);
 		$("#electableLessonList_filter_submit").click();
