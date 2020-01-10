@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 //把下面的数组元素修改为你想选的课程编号
-var inputid = new Array("1437", "1438", "1460");
+var inputid = new Array("1437", "1438");
 
 async function mainfunc(inputid) {
     var idInd = 0;
