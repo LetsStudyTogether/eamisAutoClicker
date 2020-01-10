@@ -4,7 +4,7 @@ function sleep(ms) {
 
 var sleeptime=3500;
 //把下面的数组元素修改为你想选的课程编号
-var inputid=new Array("1437", "1438");
+var inputid=new Array("1437", "1438", "1460");
 
 async function mainfunc(sleeptime,inputid)	{
 	while(1)	{
