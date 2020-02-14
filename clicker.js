@@ -33,7 +33,7 @@ async function mainfunc(inputid) {
         var request = $.ajax({
             type: "POST",
             //如果是不同的选课系统把url的profileId改成对应的即可
-            url: "http://eamis.nankai.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=666",
+            url: "http://eamis.nankai.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=673",
             data: "optype=true&operator0=" + shortid + "%3Atrue%3A0&lesson0=" + shortid + "&expLessonGroup_" + shortid + "=" + groupid,
             async: false,
             dataType: "json",
