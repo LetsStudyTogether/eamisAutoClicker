@@ -3,7 +3,7 @@ function sleep(ms) {
 }
 
 //把下面的数组元素修改为你想选的课程编号
-var inputid = new Array("1454", "1457", "1476");
+var inputid = new Array("1108", "1434");
 
 async function mainfunc(inputid) {
     var idInd = 0;
@@ -33,7 +33,7 @@ async function mainfunc(inputid) {
         var request = $.ajax({
             type: "POST",
             //如果是不同的选课系统把url的profileId改成对应的即可
-            url: "http://eamis.nankai.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=761",
+            url: "http://eamis.nankai.edu.cn/eams/stdElectCourse!batchOperator.action?profileId=834",
             data: "optype=true&operator0=" + shortid + "%3Atrue%3A0&lesson0=" + shortid + "&expLessonGroup_" + shortid + "=" + groupid,
             async: false,
             dataType: "json",
