@@ -1,6 +1,6 @@
 # eamisAutoClicker
 
-NKU EAMIS选课脚本
+NKU EAMIS AutoClicker 南开大学教务系统选课抢课脚本
 
 ## 如何使用
 1. 打开`clicker.js`，将代码复制或git clone到本地。
